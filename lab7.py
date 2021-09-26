@@ -21,8 +21,8 @@ def euclidesExtendido(n1, n2):
         q, r = n2//n1, n2%n1
         m, n = x-u*q, y-v*q
         n2,n1, x,y, u,v = n1,r, u,v, m,n
-    gcd = n2
-    return gcd, x, y
+    mcd = n2
+    return mcd, x, y
 
 print("-------------------------------------------------------------------")
 print("Algoritmo de Euclides Extendido")
