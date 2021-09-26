@@ -31,6 +31,8 @@ print("Para 1036 y 240 el resultado es:" ,euclidesExtendido(1036,240))
 print("Para 8753 y 3354 el resultado es:" ,euclidesExtendido(8753,3354))
 print("Para 2021 y 43 el resultado es:" ,euclidesExtendido(2021,43))
 
+
+#------------Fermat Test----------
 import numpy as np
 import matplotlib.pyplot as plt
 
