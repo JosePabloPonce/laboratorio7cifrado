@@ -31,10 +31,26 @@ print("Para 1036 y 240 el resultado es:" ,euclidesExtendido(1036,240))
 print("Para 8753 y 3354 el resultado es:" ,euclidesExtendido(8753,3354))
 print("Para 2021 y 43 el resultado es:" ,euclidesExtendido(2021,43))
 
+#------------Inverso a modulo n----------
+print("-------------------------------------------------------------------")
+print("Inverso a modulo n")
+
+def modInv(n, a):
+    mcd , u , v = euclidesExtendido(n,a)
+    if mcd != 1:
+        print("Para","inverso de",a,"modulo",n, "no existe inverso")
+        return 0
+     
+    return print("Inverso de",a,"modulo",n,"es:",u%a)
+
+modInv(2020, 47)
+modInv(1234, 31)
+modInv(17316, 65)
 
 #------------Fermat Test----------
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 
 import numpy as np
@@ -70,8 +86,16 @@ def generador(longitud):
 
 print("-------------------------------------------------------------------")
 print("Fermat Test")
-fermatTest(11, 5)
-
+print(fermatTest(1317, 5))
+print(fermatTest(2709, 5))
+print(fermatTest(3257, 5))
+print(fermatTest(3911, 5))
+print(fermatTest(4279, 5))
+print(fermatTest(5497, 5))
+print(fermatTest(6311, 5))
+print(fermatTest(7223, 5))
+print(fermatTest(8431, 5))
+print(fermatTest(9203, 5))
 
 while (numerosGenerados<5):
     resultado = fermatTest(generador(5), k=5)
